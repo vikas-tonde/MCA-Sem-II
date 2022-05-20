@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link rel="stylesheet" href="Q2.css">
+</head>
+
+<body>
+    <form action="" align="center" name="form" id="form">
+        <table align="center" name="table" id="table">
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="name" id="name" required autofocus="on"></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr><th>Enter the mail id: </th> <td><input type="email" name="email" placeholder="abc@xyz.com" required></td></tr>
+            <tr>
+                <th>Male</th>
+                <td><input type="radio" value="male" name="gender"></td>
+            </tr>
+            <tr>
+                <th>female</th>
+                <td><input type="radio" value="female" name="gender"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><Textarea rows="4" cols="40" name="address"></Textarea></td>
+            </tr>
+            <tr>
+                <th>Subjects:</th>
+                <td>
+                    <select name="subjects" id="sub" >
+                        <option value="null" disabled selected>Select the subject</option>
+                        <option value="Java">Java</option>
+                        <option value="DSA">DSA</option>
+                        <option value="Python">Python</option>
+                        <option value="AIT">AIT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><th>Upload an image:</th><td><input type="file" name="image" accept="image/png, image/gif, image/jpeg"></td></tr>
+            <tr><th>Enter the data of birth:</th><td><input type="date" name="dob"></td></tr>
+            <tr><th>Rate your subject knowledge:</th><td><input type="range" name="knowledge" min="0" max="100"></td></tr>
+            <tr><th>Enter your your github profile link: </th><td><input type="url" name="github" ></td></tr>
+            <tr><th>Enter the marks in gradution:</th><td><input type="number" name="marks" id="marks"></td></tr>
+            <tr><th>Enter prefered batch timing:</th><td><input type="time" name="time" id="time"></td></tr>
+            <tr><td id="reset"><input type="reset" name="reset"></td> <td><input type="submit" name="submit"></td></tr>
+        </table>
+    </form>
+</body>
+
+</html>

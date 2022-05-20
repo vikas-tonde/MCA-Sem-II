@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: aquamarine;
+}
+.nav{
+    background-color: black;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.nav-element{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-bottom: 0;
+}
+.nav-link{
+    cursor: pointer;
+    text-decoration: none;
+}
+.body-section{
+    margin-top: 0;
+    background-color: antiquewhite;
+}
+.body-text{
+    padding: 10px;
+}
+.footer{
+    border-top: 2px solid;
+    color: aquamarine;
+    padding: 40px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+}
