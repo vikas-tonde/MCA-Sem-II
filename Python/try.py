@@ -1,5 +1,8 @@
-a=10
-for i in range(5):
-    a=i
+def binaryToDecimal(num):
+    num= num[::-1]
+    ans=0
+    for i in range(len(num)):
+        ans+=(2**i)*int(num[i])
+    return ans
 
-print(a)
+print(binaryToDecimal(str(1010)))

@@ -1,1 +1,1 @@
-print('Hello world')
+octal={'01234567'.split()}print('Hello world')
