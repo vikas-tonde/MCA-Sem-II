@@ -55,9 +55,10 @@ def hexaDecimalToDecimal(num):
     num = num[::-1]
     ans = 0
     for i in range(len(num)):
-        if i.isalpha():
-            i = hexValues[i.lower()]
-        ans += (16**i)*int(num[i])
+        a=num[i]
+        if num[i].isalpha():
+            a = hexValues[num[i].lower()]
+        ans += (16**i)*int(a)
     return ans
 
 
@@ -120,7 +121,7 @@ while True:
                 print('Enter number is not valid Hexadecimal')
                 break
 
-    if not checkDecimal(n):
+    if not checkDecimal(str(n)):
         print("Enter number is not valid Decimal")
         break
     convertFromDecimal(n, baseToConvert)
