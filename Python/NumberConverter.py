@@ -5,10 +5,10 @@ octal = {'0', '1', '2', '3', '4', '5', '6', '7'}
 hexa = {'0', '1', '2', '3', '4', '5', '6', '7',
         '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'}
 hexValues = {'a': 10, 'b': 11, 'c': 12, 'd': 13, 'e': 14, 'f': 15}
-hexTable = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4',
-            5: '5', 6: '6', 7: '7',
-            8: '8', 9: '9', 10: 'A', 11: 'B', 12: 'C',
-            13: 'D', 14: 'E', 15: 'F'}
+hexTable = {0: '0', 1: '1', 2: '2', 3: '3',
+            4: '4', 5: '5', 6: '6', 7: '7',
+            8: '8', 9: '9', 10: 'A', 11: 'B',
+            12: 'C', 13: 'D', 14: 'E', 15: 'F'}
 deci = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
 
 
@@ -55,7 +55,7 @@ def hexaDecimalToDecimal(num):
     num = num[::-1]
     ans = 0
     for i in range(len(num)):
-        a=num[i]
+        a = num[i]
         if num[i].isalpha():
             a = hexValues[num[i].lower()]
         ans += (16**i)*int(a)
@@ -94,6 +94,8 @@ def convertFromDecimal(num, base):
         decimalToOctal(num)
     elif base == 16:
         decimalToHexadecimal(num)
+    elif(base==10):
+        print("Given number in Decimal is:",num)
 
 
 while True:
