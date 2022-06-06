@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to VRL</title>
+    <link rel="stylesheet" href="./Q2.1.css">
+</head>
+
+<body>
+    <form action="" align="center" name="form" id="form" autocomplete="off">
+        <table align="center" name="table" id="table">
+            <tr>
+                <td colspan="2" id="img">
+                    <img src="http://www.customercarecontactnumber.in/wp-content/uploads/2016/01/VRL-Customer-Care-Number.png"
+                        alt="logo" height="200px">
+                </td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="name" id="name" required autofocus="on"></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th>Enter the mail id: </th>
+                <td><input type="email" name="email" placeholder="abc@xyz.com" required></td>
+            </tr>
+            <tr>
+                <th>Male</th>
+                <td><input type="radio" value="male" name="gender"></td>
+            </tr>
+            <tr>
+                <th>female</th>
+                <td><input type="radio" value="female" name="gender"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><Textarea rows="4" cols="40" name="address"></Textarea></td>
+            </tr>
+            <tr>
+                <th>Destination:</th>
+                <td>
+                    <input list="dest" name="destination" id="destination">
+                    <datalist id="dest">
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Banglore">Banglore</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th>Enter the data of birth:</th>
+                <td><input type="date" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <th>Enter your adhaar number: </th>
+                <td><input type="number" name="adhaar"></td>
+            </tr>
+            <td id="reset"><input type="reset" name="reset"></td>
+            <td><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

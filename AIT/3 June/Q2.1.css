@@ -5,6 +5,10 @@ body {
     flex-direction: column;
 }
 
+#img{
+    text-align: center;
+}
+
 th {
     text-align: right;
     padding-right: 15px;

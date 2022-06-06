@@ -1,9 +1,12 @@
+from cv2 import add
+
+
 a = int(input("Enter 1st number: "))
 b = int(input("Enter 2nd number: "))
 c = a+b
 
 
-def addition(a, b):
+def addition(a, b): #formal parameters
     print(str(a), "+", str(b), "=", str(a+b))
 
 
@@ -50,5 +53,6 @@ def printTables(c):
         print()
     print("Value of **: ", k)
 
-
+addition(a,b)
+check(c)
 printTables(c)
