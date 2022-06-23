@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Animation and Transformation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .scl {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: animate;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        .rot {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            animation-name: animate1;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scaleX(20%);
+            }
+
+            25% {
+                transform: scaleY(40%);
+                background-color: yellow;
+            }
+
+            50% {
+                transform: scaleX(60%);
+                background-color: blue;
+            }
+
+            75% {
+                transform: scaleX(80%);
+                background-color: pink;
+            }
+
+            100% {
+                transform: scaleY(100%);
+                background-color: green;
+            }
+        }
+        @keyframes animate1 {
+            0% {
+                transform: rotate(20deg);
+            }
+
+            25% {
+                transform: rotate(40deg);
+                background-color: yellow;
+            }
+
+            50% {
+                transform: rotate(60deg);
+                background-color: blue;
+            }
+
+            75% {
+                transform: rotate(80deg);
+                background-color: pink;
+            }
+
+            100% {
+                transform: rotate(100deg);
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scl"></div>
+    <div class="rot"></div>
+
+</body>
+
+</html>

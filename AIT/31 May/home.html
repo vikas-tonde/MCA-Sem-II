@@ -1,60 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Bill</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Electricity Bill</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <table>
-        <tr class="image">
-            <th colspan="2" >
-                <img src="https://upload.wikimedia.org/wikipedia/mr/a/a0/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B5%E0%A4%BF%E0%A4%A4%E0%A4%B0%E0%A4%A3.PNG"
-                    alt="mahavitaran image" class="logo"> <br>
-                Maharashtra State Electricity Distribution Company Ltd.
-            </th>
-        </tr>
-        <tr class="row1">
-            <td colspan="2" class="row1col">
-                <p class="note"> Note: while saving/printing the bill in .pdf format please tick Background graphics
-                    option and margins
-                    to none in more settings. </p>
-                <div class="button">
-                    <button>print/download</button>
+    <header>
+        <div class="logo">
+            <img src="https://www.mahadiscom.in/wp-content/uploads/2017/12/logo_main.jpg" alt="logo">
+            <h1>Maharashtra State Electricity Distribution Co. Ltd.</h1>
+        </div>
+    </header>
+    <main class="table">
+        <div class="note">
+            <p>Note: While Saving printing the bill in .PDF format please tick background graphics option and margins to
+                none in more settings. <input type="button" value="Print / Download"></p>
+        </div>
+        <div class="date">
+            <h4>Veej Purvadha Deyak AAhe May: 2022</h4>
+        </div>
+        <div class="address">
+            <div>
+                <div class="website">
+                    Website: www.mahadiscom.in
                 </div>
-                <div>Veej Puravtha Deyak mahe: May 2022</div>
-                <div class="r1c1">
-                    <span class="r1c1s1">website: www.mahadiscom.in <br>
-                        GSTIN of MSEDCL 27AAECM2933K1ZB <br>
-                        Bill No: (GGN): 000001581864696
-                    </span>
-                    <span class="r1c1s2">
-                        HSN code 2716000
-                    </span>
+                <div class="addressSample">
+                    Lorem, ipsum dolor sit amet consectetur <br>
+                    adipisicing elit. Debitis, maxime!
                 </div>
-                <!-- <hr class="hr"> -->
-            </td>
-        </tr>
-        <tr class="row2">
-            <td class="row2c1" colspan="2">
-                <div class="row2d">
-                    <span class="r2c1s1">
-                        <b>Cutstomer Number: 160221072712</b> <br>
-                        <b>Mr. Balu Govind Tonde</b>
-                        <p>Sno. 111 near datta mandir, Ganesh Colony, Sutardara, Kothrud Pune 411038</p>
-                        <b>Mobile No.: </b>97******67
-                    </span>
-                    <span class="r2c1s2">
-                        afnwjd  
-                    </span>
+            </div>
+            <div>
+                HSN code 2716000
+            </div>
+        </div>
+        <hr />
+        <div class="kramanka">
+            <div>
+                Grahak Kramanka: 160221072712 <br>
+                Mrs. RUKMINI DEVI
+                <div class="addre">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur quae <br>
+                    officiis mollitia! Assumenda hic molestiae quaerat officia
                 </div>
-            </td>
-        </tr>
-    </table>
-</body>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="boxing">
+                        <div>Due Date </div>
+                        <div>09-MAY-22</div>
+                    </div>
+                    <div class="boxing">
+                        <div>Due Amount </div>
+                        <div>4,750.00</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxing">
+                        <div>Due Date </div>
+                        <div>09-MAY-22</div>
+                    </div>
+                    <div class="boxing">
+                        <div>Due Amount </div>
+                        <div>4,750.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="middle">
+            <div>
+                <div class="InnerMiddle">
+                    <div class="left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Sed architecto voluptates recusandae accusamus ullam placeat <br>
+                        odio nam voluptatum veniam tenetur! <br>
+                    </div>
+                    <div class="center">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                        Exercitationem temporibus facilis odit, tempora laboriosam assumenda! <br>
+                    </div>
+                </div>
+                <div>
+                    <div class="btnContainer">
+                        <div class="btn">Current Reading</div>
+                        <div class="btn">Previous Reading</div>
+                        <div class="btn">MF</div>
+                        <div class="btn">Unit</div>
+                        <div class="btn">Adj Unit</div>
+                        <div class="btn">Total</div>
+                        <div class="btn">15109</div>
+                        <div class="btn">15022</div>
+                        <div class="btn">01</div>
+                        <div class="btn">88</div>
+                        <div class="btn">0</div>
+                        <div class="btn">86</div>
+                    </div>
+                </div>
+                <div class="meter">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatibus, aspernatur in voluptate enim assumenda culpa face
+                </div>
+            </div>
+            <div class="box">
+                <div class="scan">
+                    <div class="scannerText">
+                        Scan This QR Code with BHIM App for UPI Payment
+                    </div>
+                    <div class="ScannerImage">
+                        <img src="data:image/png;base64"
+                            alt="scanner" width="60px">
+                    </div>
+                </div>
+                <div class="normalText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magnam?
+                    Lorem ipsum dolor sit.
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="maincontain">
+            <div class="kramanka">
+                <div class="barImage">
+                    <img src="./bar.PNG" width="1030px" alt="bar" srcset="">
+                </div>
+                <div class="box1">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo doloribus
+                        praesentium vero, autem iusto molestiae. Dicta doloremque obcaecati consequatur.
+                    </div>
+                </div>
+            </div>
 
+            <div class="bigBox">
+                <h4>Special Message:</h4>
+                <ul>
+                    <li>
+                        Consumers can pay electricity bill online through MSEDCL official website www.mahadis com.in and
+                        through MAHAVITARAN Mobile App without any extra charges. Consumers will not be charged any
+                        extra charges for electricity bill payments made through Net banking. UPI, Debit card, Digital
+                        wallet and Cash cards.
+                    </li>
+                    <li>
+                        MSEDCL has started facility to give information of meter reading through SMS on registered
+                        mobile number of the consumers after meter reading taken. Consumer can view the photo of meter
+                        reading on Consumer Portal of MSEDCL
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="middle1">
+            <div>
+                <div class="row">
+                    <div class="data">
+                        Billing Unit
+                    </div>
+                    <div class="data">
+                        4745
+                    </div>
+                    <div class="data">
+                        Customer No &nbsp;
+                    </div>
+                    <div class="data">
+                        170000043790
+                    </div>
+                    <div class="data">
+                        PC:
+                    </div>
+                    <div class="data">
+                        2
+                    </div>
+                    <div class="data">
+                        Tariff:
+                    </div>
+                    <div class="data">
+                        092
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="data1">
+                        Due Date
+                    </div>
+                    <div class="data1">
+                        10-Jun-19
+                    </div>
+                    <div class="data1">
+                        590
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="data2">
+                        Paid By this date
+                    </div>
+                    <div class="data2">
+                        10-Jun-19
+                    </div>
+                    <div class="data2">
+                        590.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="data2">
+                        Paid By this date
+                    </div>
+                    <div class="data2">
+                        31-Jul-19
+                    </div>
+                    <div class="data2">
+                        620.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="middle1">
+            <div>
+                <div class="row">
+                    <div class="data1">
+                        Bank Copy
+                    </div>
+                    <div class="data1">
+                        DTC No
+                    </div>
+                    <div class="data1">
+                        4745885
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="data">
+                        Billing Unit
+                    </div>
+                    <div class="data">
+                        4745
+                    </div>
+                    <div class="data">
+                        Customer No &nbsp;
+                    </div>
+                    <div class="data">
+                        170000043790
+                    </div>
+                    <div class="data">
+                        PC:
+                    </div>
+                    <div class="data">
+                        2
+                    </div>
+                    <div class="data">
+                        Tariff:
+                    </div>
+                    <div class="data">
+                        092
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="data2">
+                        Due Date
+                    </div>
+                    <div class="data2">
+                        10-Jun-19
+                    </div>
+                    <div class="data2">
+                        10-Jun-19
+                    </div>
+                </div>
+                <div class="row">
+                   
+                    <div class="data2">
+                        Paid By this date
+                    </div>
+                    <div class="data2">
+                        10-Jun-19
+                    </div>
+                    <div class="data2">
+                        590.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="data2">
+                        Paid After this date
+                    </div>
+                    <div class="data2">
+                        31-Jul-19
+                    </div>
+                    <div class="data2">
+                        620.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>

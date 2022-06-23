@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript </title>
+    <script>
+        setInterval(()=>{
+            var time=document.getElementById("time");
+            var hour=new Date().getHours()
+            var min=new Date().getMinutes()
+            var sec=new Date().getSeconds()
+            time.innerHTML=`<h2>${hour}:${min}:${sec}</h2>`;
+        })
+        function showLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            alert("Latitude : " + latitude + " Longitude: " + longitude);
+        }
+
+        function errorHandler(err) {
+            if (err.code == 1) {
+                alert("Error: Access is denied!");
+            } else if (err.code == 2) {
+                alert("Error: Position is unavailable!");
+            }
+        }
+        function getGeo() {
+            navigator.geolocation.getCurrentPosition(showLocation, errorHandler);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="time"></div>
+    <button onclick="alert(navigator.appName)">App Name</button><br>
+    <button onclick="alert(navigator.appVersion)">App Version</button><br>
+    <button onclick="alert(navigator.appCodeName)">App code name</button><br>
+    <button onclick="alert(document.contentType)">Content Type</button><br>
+    <button onclick="window.print()">Print the current Page</button><br>
+    <button onclick="getGeo()">Get Geo Loaction</button>
+
+</body>
+
+</html>

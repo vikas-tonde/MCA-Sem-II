@@ -1,85 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    box-sizing: border-box;
+    height: 100%;
 }
-
-body {
+.logo{
     display: flex;
-    height: 100vh;
-    width: 100%;
     justify-content: center;
-
+    align-items: center;
+    flex-direction: column;
 }
-
-table {
+.table{
+    margin: 0 100px 100px 100px;
+    border: 1px solid #000;
+    padding: 0 20px;
+}
+.note{
     text-align: center;
-    width: 50%;
-    border-collapse: collapse;
+   
 }
-
-/* table,
-tr {
-    border: 1px solid;
-} */
-
-.image {
-    padding: 10px;
-    height: 100px;
-    border: none !important;
+.date{
+    padding-top: 10px;
+    text-align: center;
 }
-
-.logo {
-    height: 40px;
+.address{
+    display: flex;
+    justify-content: space-between;
 }
-
-.row1 {
-    height: 150px;
-    border-bottom: 1px solid #000;
-    /* border-bottom: 2px solid black; */
+.website{
+    font-weight: bold;
 }
-
-.row1col {}
-
-.note {
-    font-size: 13px;
+.kramanka{
+    display: flex;
+    justify-content: space-between;
 }
-
-.button {
-    text-align: end;
-    margin-bottom: 15px;
+.boxes{
+    display: flex;
+    flex-direction: column;
 }
-
-.r1c1 {
+.box{
+    background-color: rgb(255,179,179);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.boxing{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(255,236,255);
+}
+.InnerMiddle, .scan{
     display: flex;
     flex-direction: row;
 }
-
-.r1c1 span {
-    width: 50%;
-    /* border: 2px solid red; */
+.scannerText{
+    width: 140px;
 }
-
-.r1c1s1 {
-    text-align: left;
+.left, .center{
+    width: 430px;
 }
-
-.r1c1s2 {
-    text-align: end;
+.btn{
+    background: linear-gradient(rgb(247, 255, 234), rgb(154, 255, 60));;
+    padding: 5px 18px;
+    margin: 2px; 
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 1px 3px 3px #000;
+    height: 42px;
+    width: 12%;
+    font-size: 19px;
 }
-
-row2d {
+.btnContainer{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    text-align: center;
 }
-
-row2d span {
-    width: 50%;
+.normalText{
+    width: 140px;
 }
-
-r2c1s1 {
-    text-align: left;
+.meter{
+    width: 240px;
+    margin: 10px;
 }
-
-r2c1s2 {
-    text-align: end;
+.text{
+    width: 200px;
+}
+.box1{
+    background-color: rgb(251,198,214);
+    padding: 5px;
+} 
+.bigBox{
+    margin: 0;
+    border-top: 5px solid #fff;
+    background-color: rgb(251,198,214);
+}
+.maincontain{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    display: table;
+    width:auto;
+    background-color:#eee;
+    border:1px solid  #666666;
+    border-spacing:5px;
+}
+.middle1, .row{
+    display: flex;
+    margin: 5px;
+}
+.data, .data1, .data2{
+    border: 1px solid #000;
+    padding: 2px 20px;
+}
+.data1{
+    width: 202px;
+}
+.data2{
+    width: 110px;
 }

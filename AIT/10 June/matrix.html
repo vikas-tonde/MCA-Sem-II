@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+    <style>
+        table,
+        td {
+            border: 3px solid black;
+        }
+
+        table {
+            text-align: center;
+            box-shadow: inset 5px red;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var r = parseInt(prompt("Enter the number of rows: "))
+        var c = parseInt(prompt("Enter the number of columns: "))
+        var i, j;
+        var a = new Array(r);
+        for (i = 0; i < r; i++) {
+            var t = new Array(c);
+            for (j = 0; j < c; j++) {
+                t[j] = prompt("Enter the element: ")
+            }
+            a[i] = t;
+        }
+        var op = "<table>"
+        for (i = 0; i < r; i++) {
+            op += "<tr>"
+            for (j = 0; j < c; j++) {
+                op += "<td>" + a[i][j] + "</td>"
+            }
+            op += "</tr>"
+        }
+        op += "</table>"
+        document.write(op)
+    </script>
+</body>
+
+</html>
