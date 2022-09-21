@@ -1,0 +1,45 @@
+<!-- WAP to implement 5 types of events with different functions using jQuery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".click").click(function(){
+                $(this).text("You just clicked me");
+            });
+            $(".dblclick").dblclick(function(){
+                $(this).text("You just double clicked me");
+            });
+            $(".mouseenter").mouseenter(function(){
+                $(this).text("You entered your mouse here");
+            });
+            $(".mouseleave").mouseleave(function(){
+                $(this).text("Your mouse left from here");
+            });
+            $(".keyup").keypress(function(e){
+                alert(e.key)
+            });
+        });
+    </script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="click">Click here</div>
+    <div class="dblclick">Double Click here</div>
+    <div class="mouseenter">Mouse enter here</div>
+    <div class="mouseleave">Mouse enter here and leave</div>
+    <textarea class="keyup">Press key to see</textarea>
+</body>
+</html>

@@ -1,5 +1,4 @@
 import re
-from tarfile import LNKTYPE
 
 
 m = input("Enter the main string: ")

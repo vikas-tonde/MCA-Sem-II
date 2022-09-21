@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button").click(function () {
+                $(".rot").animate(
+                    {
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '500px',
+                        width: '500px'
+                    }, 5000);
+            });
+        });
+    </script>
+    <style>
+        .rot {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="button">click me</button>
+    <div class="rot"></div>
+</body>
+
+</html>
